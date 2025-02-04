@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+.info {
+  margin: 0 50px;
+}
+.tokenInput {
+  border: solid 2px white;
+  border-radius: 5%;
+  margin: 0 10px;
+}
+ul {
+  text-align: center;
+}
+ul li:not(.button):not(.contact) {
+  list-style: none;
+  width: 45vw;
+  margin: 10px;
+}
+.descBlock {
+  display: inline-grid;
+  height: 650px;
+}
+.reviewBlock {
+  display: inline-grid;
+  height: 1100px;
+}
+.descArea {
+  resize: none;
+  height: 500px;
+  width: 100%;
+  padding: 20px;
+  border-radius:1%;
+}
+.reviewArea {
+  resize: none;
+  height: 950px;
+  width: 100%;
+  padding: 20px;
+  border-radius:1%;
+}
+.button {
+  list-style: none;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  margin: 0 10px;
+}
+.funcButton {
+  border: 1px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-radius: 10%;
+  width: 50px;
+  height: 30px;
+  background-color: cornflowerblue;
+}
+.funcButton:hover {
+  background-color: aqua;
+}
+.fotterContact {
+  margin-left: 10px;
+}
+.fotterContact ul {
+  text-align: left;
+}
+.contact {
+  display: inline-block;
+  margin: 5px;
+}
+.contactIcon {
+  height: 50px;
+  width: 50px;
+}
